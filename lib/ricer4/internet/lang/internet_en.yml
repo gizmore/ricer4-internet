@@ -1,0 +1,24 @@
+en:
+  active_record:
+    magic:
+      param:
+        url:
+          type: "URL"
+          hint: "http://google.de?q=1"
+          err_bad_url: "a malformed url"
+          err_ping_failed: "not responding to pings"
+          err_invalid_scheme: "not a scheme from %{allowed}"
+
+  ricer4:
+    err_reason_unknown: "Unknown"
+    err_request_exception: "The request to %{url} raised an exception. Reason: %{reason}"
+    err_redirect_loop: "The requset to %{url} cyclic redirects in a way it cannot complete."
+    err_response_bad: "The request to %{url} returned %{code}: %{text}"
+    err_response_empty: "The request to %{url} returned nil."
+
+    plugins:
+      internet:
+        
+        hping:
+          trigger: "net.ping"
+          description: "Send harmless ping packets to a host."
